@@ -27,6 +27,8 @@ Route::get('/', function () {
     ]);
 });
 
+
+// otras rutas
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
